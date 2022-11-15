@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+    <header class="title">
+        <nav class="titles title_top">
+            <h1 class="logo">Python Academy</h1>
+            <ul class="items_1">
+                <li class="item_1">
+                    <a href="">Home</a>
+                </li>
+                <li class="item_1">
+                    <a href="">Courses</a>
+                </li>
+                <li class="item_1">
+                    <a href="">About</a>
+                </li>
+                <li class="item_1">
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+            <div class="form_tags">
+                <a href="" class="form_tag login_tag">Login</a>
+                <a href="" class="form_tag register_tag">Register</a>
+            </div>
+        </nav>
+        <nav class="titles title_bottom">
+            <ul class="items_2">
+                <li class="item_2">
+                    <a href="">Graphic Design</a>
+                </li>
+                <li class="item_2">
+                    <a href="">Frontend Programming</a>
+                </li>
+                <li class="item_2">
+                    <a href="">Backend Programming</a>
+                </li>
+                <li class="item_2">
+                    <a href="">Game Programming</a>
+                </li>
+                <li class="item_2">
+                    <a href="">Cyber Security</a>
+                </li>
+                <li class="item_2">
+                    <a href="">Data Science</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="register">
+        <div class="img_background"></div>
+        <div class="form_background">
+            <div class="form_background_title">
+                <h2>Sign Up</h2>
+            </div>
+
+            <form action="">
+                <div class="username_div">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" placeholder="e.g. john_03" pattern="[a-z0-9._]{8,32}" required autofocus>
+                </div>
+
+                <div class="email_div">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="e.g. john.03@gmail.com" required>
+                </div>
+
+                <div class="password_div">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="e.g. A63hlsd435_" pattern="[A-Z]{1}[A-Za-z0-9]{7,64}" required>
+                </div>
+
+                <div class="gender_div">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" required>
+                        <option value="0" disabled>Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+
+                <div class="birthday_div">
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" id="birthday" min="1942-01-01" max="2004-12-31" required>
+                </div>
+
+                <div class="country_div">
+                    <label for="country">Country:</label>
+                    <input type="text" id="country" placeholder="e.g. Usa" pattern="[A-Z]{1}[a-z]{1,64}" required>
+                </div> 
+
+                <div class="biography_div">
+                    <label for="biography">Biography:</label>
+                    <textarea id="biography" cols="25" rows="5" placeholder="e.g. I'm John. I'm a student." maxlength="500"></textarea>
+                </div>
+                
+                <div class="agreement">
+                    <div class="to-reject">
+                        <input type="radio" id="to_reject" name="rules" checked>
+                        <label for="to_reject">I do not accept the <a href="">Community Agreement</a>.</label>
+                    </div>
+                    <div class="to-accept">
+                        <input type="radio" id="to_accept" name="rules">
+                        <label for="to_accept">I have read and accept the <a href="">Community Agreement</a>.</label>
+                    </div>
+                </div>
+
+                <div class="button">
+                    <button type="submit">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="row">
+            <div class="col col_left">
+                <h3>Menu</h3>
+                <ul class="items_3">
+                    <li class="item_3">
+                        <a href="">Home</a>
+                    </li>
+                    <li class="item_3">
+                        <a href="">Courses</a>
+                    </li>
+                    <li class="item_3">
+                        <a href="">About</a>
+                    </li>
+                    <li class="item_3">
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col col_center">
+                <h3>Courses</h3>
+                <ul class="items_3">
+                    <li class="item_3">
+                        <a href="">Design</a>
+                    </li>
+                    <li class="item_3">
+                        <a href="">Programming</a>
+                    </li>
+                    <li class="item_3">
+                        <a href="">Cyber Security</a>
+                    </li>
+                    <li class="item_3">
+                        <a href="">Data Science</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col col_right">
+                <h3>Contact</h3>
+                <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Address : Süleymaniye St | Eminönü | Fatih | İstanbul
+                </span>
+                <span>
+                    <i class="fa-solid fa-envelope"></i>
+                    Email : pythonacademy@gmail.com
+                </span>
+                <span>
+                    <i class="fa-solid fa-phone"></i>
+                    Phone : +90 123 456 78 90
+                </span>
+                <div class="icons">
+                    <span>
+                        <a href="" class="fa-brands fa-facebook-f"></a>
+                    </span>
+                    <span>
+                        <a href="" class="fa-brands fa-twitter"></a>
+                    </span>
+                    <span>
+                        <a href="" class="fa-brands fa-instagram"></a>
+                    </span>
+                    <span>
+                        <a href="" class="fa-brands fa-youtube"></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <p>© Python Academy 2022. All Right Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

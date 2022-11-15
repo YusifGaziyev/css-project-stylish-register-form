@@ -1,0 +1,172 @@
+.register {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+}
+
+.register .img_background {
+    background: url(../img/python.jpeg);
+    width: 100%;
+    height: 1000px;
+    background-size: cover;
+    background-position: center;
+}
+
+.form_background {
+    width: 40%;
+    height: 1000px;
+    background-color: #ccc;
+    opacity: 0.9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.form_background .form_background_title {
+    height: 75px;
+}
+
+.form_background_title h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    color: #2e4c6d;
+    padding-top: 44px;
+}
+
+form {
+    margin-top: 25px;
+}
+
+label,
+input:not([type="radio"]),
+select,
+textarea {
+    display: block;
+}
+
+label:not([for*="to"]) {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 15px 0 8px 0;
+}
+
+input:not([type="radio"]),
+select,
+textarea {
+    margin: auto;
+    width: 45%;
+    padding: 10px 0 10px 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    outline: none;
+    background-color: #2e4c6d;
+    color: #fff !important;
+}
+
+input::placeholder {
+    padding-left: 5px;
+    font-size: 14px;
+    color: #e6e6e6;
+}
+
+textarea::placeholder {
+    padding-left: 5px;
+    font-size: 14px;
+    color: #e6e6e6;
+}
+
+[type="date"],
+[id="gender"],
+[id="cities"] {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+input::selection {
+    background-color: black;
+}
+
+textarea::selection {
+    background-color: black;
+}
+
+.agreement {
+    height: 80px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.agreement div {
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.agreement label, input {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.agreement a {
+    text-decoration: none;
+    color: #007399;
+}
+
+.agreement a:hover {
+    text-decoration: underline;
+}
+
+.to-accept {
+    padding-left: 30px;
+}
+
+.to-reject {
+    padding-right: 31px;
+}
+
+.agreement input {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+[id="to_reject"]:checked {
+    background-color: #cc0000;
+    transition-duration: .3s;
+}
+
+[id="to_accept"]:focus {
+    background-color: #00b300;
+    transition-duration: .3s;
+}
+
+.button {
+    text-align: center;
+}
+
+.button button {
+    padding: 10px 25px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    background: linear-gradient(to right, #0099ff 0%, #2e4c6d 100%);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button button:hover {
+    background: linear-gradient(to left, #ffa500 0%, #cc0000 100%);
+}
+
+.button button:active {
+    background: linear-gradient(to right, #ffb833 0%, #660000 100%);
+}
+
+input:active {
+    cursor: text;
+}
